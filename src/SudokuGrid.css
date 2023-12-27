@@ -1,0 +1,39 @@
+.sudoku-board {
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 3px solid #777;
+  }
+  
+  .sudoku-board td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #777;
+  }
+  
+  /* 每隔三个单元格的右边框加粗 */
+  .sudoku-board td:nth-child(3n) {
+    border-right-width: 3px;
+  }
+  
+  /* 每隔三个单元格的下边框加粗 */
+  .sudoku-board tr:nth-child(3n) td {
+    border-bottom-width: 3px;
+  }
+  
+  .sudoku-board input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    text-align: center;
+    border: none;
+    padding: 0;
+    outline: none;
+  }
+  
+  .sudoku-board input:read-only {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  .invalid {
+    color: red !important;
+}
