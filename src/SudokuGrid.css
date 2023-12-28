@@ -32,7 +32,7 @@
   
   .sudoku-board input:read-only {
     background-color: #f4f4f4;
-    font-weight: bold;
+    font-weight: bolder;
   }
   .invalid {
     color: red !important;
